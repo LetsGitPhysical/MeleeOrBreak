@@ -151,7 +151,6 @@
   
   .banner {
     background-image: url("../pics/archGalaxy.png"), linear-gradient(180deg, var(--secondaryHi) 0%, var(--primary) 50%);
-    /* background-image: url("../pics/archGalaxy.png"); */
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -170,7 +169,6 @@
   .banner h2 {
     background-color: transparent;
     color: transparent;
-    transition: all 0.33s ease-in;
     margin-bottom: 20vmin;
     padding: 5px 10px;
     font-size: 2.3rem;
@@ -178,6 +176,7 @@
     display: inline;
   }
   .banner h2:hover {
+    transition: all 0.30s ease-in;
     color: var(--secondaryHi);
   }
   /* all of main content(about me - contact) auto 88% left & right */
@@ -262,7 +261,6 @@
   .flex-item:hover {
     background-color: transparent;
     border: 5px solid var(--secondaryUltra);
-    /* color: var(--secondaryUltra); */
     color: var(--yellowHi);
   }
 
