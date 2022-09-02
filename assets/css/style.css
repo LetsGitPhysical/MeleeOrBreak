@@ -6,8 +6,9 @@
 /* colors as variables to reference */
 :root {
     --primary: rgba(32, 56, 91, 0.75);
+    --blueMed: rgb(30, 85, 248);
     --secondary: rgb(8, 107, 113,.75);
-    --secondaryMed: rgba(33, 167, 171, 0.813);
+    --secondaryMed: rgb(23, 183, 189);
     --secondaryHi: rgb(129, 251, 255);
     --secondaryUltra: rgb(164, 252, 255);
     --tertiary: rgb(103, 11, 63);
@@ -53,10 +54,10 @@
   }
 
   #p_f,#p_l{
-    margin-left: 4vw;
+    margin-left: 3vw;
   }
   #a_l{
-    margin-right: 4vw;
+    margin-right: 3vw;
   }
 
   #p_f:hover{
@@ -107,10 +108,9 @@
     /* background-image: linear-gradient(180deg, var(--secondary) 0%, var(--secondaryHi) 100%); */
     padding: 10px 0% 10px 0%;
     margin: 0;
-    font-size: 3.25vw;
+    font-size: 3.5vw;
     line-height: 1;
   }
-
 
   /* nav links */
   nav {
@@ -169,14 +169,16 @@
   .banner h2 {
     background-color: transparent;
     color: transparent;
-    margin-bottom: 20vmin;
+    margin-top: 20px;
+    margin-bottom: 15vmin;
     padding: 5px 10px;
     font-size: 2.3rem;
     line-height: 1.2;
     display: inline;
+    transition: all 0.35s;
   }
   .banner h2:hover {
-    transition: all 0.30s ease-in;
+    transition: all 0.35s;
     color: var(--secondaryHi);
   }
   /* all of main content(about me - contact) auto 88% left & right */
@@ -199,8 +201,10 @@
   }
   
   .page-section p {
-    color: var(--secondaryHi);
-
+    /* color: var(--secondaryMed); */
+    transition: all 0.30s;
+    color: var(--blueMed);
+    
   }
   .page-section > h2 {
     flex: 0 0 20%;
@@ -209,9 +213,10 @@
     border-right: 4px solid var(--secondaryMed);
     font-size: 3vw;
     line-height: 1.1;
+    
   }
   .page-section h2:hover {
-    transition: all 0.25s ease-in;
+    transition: all 0.25s;
     color: var(--tertiaryUltra);
     border-right: 4px solid var(--secondaryHi);
   }
@@ -224,6 +229,11 @@
     margin-bottom: 20px;
   }
   
+  .page-section p:hover {
+    color: var(--secondaryHi);
+  }
+
+
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +242,7 @@
   
   .flex-item {
     border: 5px solid var(--secondaryMed);
-    background-color: rgba(35, 31, 90, 0.564);
+    background-color: rgba(54, 48, 130, 0.564);
     color: var(--yellowMed);
     min-height: 300px;
     max-height: 400px;
@@ -240,13 +250,13 @@
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
-    margin: 0.5em;
+    margin: .5em;
     text-decoration: none;
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: center;
     transition: all 0.25s;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   /* feature first portfolio item */
@@ -282,7 +292,8 @@
   }
   
   .contact address a {
-    color: var(--secondaryMed);
+    /* color: var(--secondaryMed); */
+    color: var(--blueMed);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
